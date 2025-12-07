@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme generator, Mark Sadnik, RIT 2 UN</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <form class="main" enctype="multipart/form-data" method="post" action="{{ url_for('postHandler') }}">
+        <!--NAVBAR-->
+        <div class="navbar">
+            <div class="navLeft">
+                Mark Sadnik, RIT 2 UN
+            </div>
+            <div class="navMid">
+                Meme generator
+            </div>
+            <div class="navRight">
+                Razvoj programske opreme
+            </div>
+        </div>
+        <!--NAVBAR-->
+
+        <!--CONTENT-->
+        <div class="container">
+            <div class="conTop">
+                <div>
+                    <b>Top text</b>
+                </div>
+                <div>
+                    <input type="text" name="topText" placeholder="Top text..." required maxlength="50">
+                </div>
+            </div>
+            <div class="conMid">
+                <div>
+                    <b>Upload file</b>
+                </div>
+                <div class="imgCon">
+                    <div class="imgInner">
+                        <div class="imgForm">
+                            <div>
+                                <input type="file" name="picture" accept="image/png, image/gif, image/jpeg, image/webp" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="conBottom">
+                <div>
+                    <b>Bottom text</b>
+                </div>
+                <div>
+                    <input type="text" name="bottomText" placeholder="Bottom text...">
+                </div>
+            </div>
+            <div class="conSubmit">
+                <div>
+                    <input type="submit" class="submitBtn" formenctype="multipart/form-data" value="Generate Meme" required maxlength="50">
+                </div>
+            </div>
+        </div>
+        <!--CONTENT-->
+
+        <!--FOOTER-->
+        <div class="footer">
+            <div class="aboutContainer">
+                <div class="title">
+                    About this app
+                </div>
+                <div class="description">
+                    <p>
+                        This app is a simple meme generator app, with three main elements:
+                        <br>
+                        1. Top text = here you enter the top text,
+                        <br>
+                        2. Image field = here you upload the file that will serve as a canvas for the top and bottom text
+                        <br>
+                        3. Bottom text = and here you enter the bottom text of the meme. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER-->
+    </form>
+    
+</body>
+</html>
