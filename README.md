@@ -13,6 +13,7 @@ The main goal is to demonstrate the usage of Docker for educational purposes (RP
 
 ### Docker 
 **REQUIREMENT:** Docker desktop
+
 Navigate to the /app folder, where there is a prepared Dockerfile and all the necessary files for the app.
 
 ```powershell
@@ -29,10 +30,13 @@ docker ps
 
 ### Python without container
 **REQUIREMENTS:** 
-    1. Latest version of Python 3
-    2. Virtual environment venv
-    2. Flask
-    3. Pillow (PIL)
+    - Latest version of Python 3
+
+    - Virtual environment venv
+
+    - Flask
+
+    - Pillow (PIL)
 
 To create a virtual environment and activate it:
 
@@ -62,5 +66,7 @@ pip install -r memeGenerator/requirements.txt
 
 ## Final message 
 Have fun and try to create the funniest meme in existence.
+
 Your truly,
+
 Mark Sadnik, RIT 2 UN
