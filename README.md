@@ -30,13 +30,14 @@ docker ps
 
 ### Python without container
 **REQUIREMENTS:** 
-    - Latest version of Python 3
 
-    - Virtual environment venv
+    1. Latest version of Python 3
 
-    - Flask
+    2. Virtual environment venv
 
-    - Pillow (PIL)
+    3. Flask
+
+    4. Pillow (PIL)
 
 To create a virtual environment and activate it:
 
