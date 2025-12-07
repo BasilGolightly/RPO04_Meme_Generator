@@ -10,7 +10,7 @@ COPY ./memeGenerator .
 # nalozi odvisnosti oz. depencencies zapisane v requirements.txt
 RUN pip install -r requirements.txt
 
-# odpri vrat 5000 za aplikacijo
+# odpri vrata 5000 za aplikacijo
 EXPOSE 5000
 
 # izvedi "pythom meme.py"
